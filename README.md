@@ -10,3 +10,7 @@ Notebook for blockchain
 3. Personal blockchain for Ethereum development [Ganache](https://github.com/trufflesuite/ganache)
 4. The most popular Ethereum development framework [Truffle](http://truffleframework.com)
 5. MetaMask([Firefox extension](https://addons.mozilla.org/en-US/firefox/addon/ether-metamask/)/[Chrome extension](https://chrome.google.com/webstore/detail/nkbihfbeogaeaoehlefnkodbefgpgknn)/[Brave Browser](https://brave.com/)). Brings Ethereum to your browser
+
+## Development scaffold
+1. [Truffle demo](https://github.com/zhongwei/blockchainnote/blob/master/mytruffle/README.md)
+   > Use ganache-cli, truffle, geth, Mist
