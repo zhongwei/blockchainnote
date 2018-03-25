@@ -4,7 +4,7 @@
 - `npm install -g ganache-cli`
 - `mkdir mytruffle`
 - `truffle init`
-- `ganache -p 7545`
+- `ganache-cli -p 7545`
 - `truffle compile`
 - `truffle migrate --network development`
 - `truffle console --network development`
