@@ -1,0 +1,40 @@
+# Truffle Dev Demo
+
+- `npm install -g truffle`
+- `npm install -g ganache-cli`
+- `mkdir mytruffle`
+- `truffle init`
+- `ganache -p 7545`
+- `truffle compile`
+- `truffle migrate --network development`
+- `truffle console --network development`
+- truffle(development)> `account0 = web3.eth.accounts[0]`
+- truffle(development)> `account1 = web3.eth.accounts[1]`
+- truffle(development)> `Wrestling.deployed().then(inst => { WrestlingInstance = inst })`
+- truffle(development)> `WrestlingInstance.westler1.call()`
+- truffle(development)> `WrestlingInstance.registerAsOpponent({from: account1})`
+- truffle(development)> `WrestlingInstance.westler2.call()`
+- truffle(development)> `WrestlingInstance.wrestle({from: account0, value: web3.toWei(2, "ether")})`
+- truffle(development)> `WrestlingInstance.wrestle({from: account1, value: web3.toWei(3, "ether")})`
+- truffle(development)> `WrestlingInstance.wrestle({from: account0, value: web3.toWei(5, "ether")})`
+- truffle(development)> `WrestlingInstance.wrestle({from: account1, value: web3.toWei(20, "ehter")})`
+- `touch genesis.json`
+- `geth --datadir=./chaindata/ init ./genesis.json`
+- `geth --datadir=./chaindata/ --rpc --rpcapi db,eth,net,web3,personal,web3`
+- `./Mist --rpc http://localhost:8545`
+- Create new personal account
+- `geth attach ./chaindata/geth.ipc`
+- `> miner.start()`
+- `> miner.stop()`
+- add ourTestNet in truffle.json
+- `> personal.unlockAccount('0x7B583a15984Fb8e4C3e08C8A70d08D5581Ae645B', '111111111')`
+- `truffle migrate --network ourTestNet`
+- `truffle console --network ourTestNet`
+- truffle(ourTestNet)> `Wrestling.address`
+- truffle(ourTestNet)> `JSON.stringify(Wrestling.abi)`
+- Add WATCH CONTRACT in Minst
+- Click contract to open contract page
+- Select function and click EXECUTE
+- `> miner.start()`
+- `> miner.stop()`
+
